@@ -8,7 +8,9 @@
     <classes>
       <class name="io.mosip.preregistration.tests.PreRegistrationSmoke">
         <methods>
+          <include name="generateOtp"/>
           <include name="bookAppointment"/>
+          <include name="fetchCenter"/>
           <include name="documentUpload"/>
           <include name="createApplication"/>
           <include name="insertIntoDb"/>
@@ -16,7 +18,7 @@
       </class> <!-- io.mosip.preregistration.tests.PreRegistrationSmoke -->
       <class name="io.mosip.actuator.healthcheck.test.ActuatorTest">
         <methods>
-          <include name="actuatorHealthTest" invocation-numbers="1 3 4 5"/>
+          <include name="actuatorHealthTest" invocation-numbers="0 1 2 3 4"/>
           <include name="getTestCaseName"/>
           <include name="setResultTestName"/>
         </methods>
